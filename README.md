@@ -29,7 +29,10 @@ Dependencies
 
 please install these dependencies before running the code.
 
+
+
 Usage
+
 •	Load the spaCy English model using nlp = spacy.load("en_core_web_sm").
 
 • The mask_names function accepts a text input and masks any named entities of type "PERSON" in it.
