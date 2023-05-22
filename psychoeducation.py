@@ -315,6 +315,8 @@ def k_anonymity(df_Table, columns, k):
     return df_anon
 
 anon_df = k_anonymity(df_Table, ['Country', 'Age', 'Gender', 'RelationshipStatus'], 5)
+anon_df.drop(columns=['Chat Sharing Preferences'], inplace=True)
+anon_df.drop(columns=['Documents Shared With Therapist'], inplace=True)
 
 # Store the DataFrame in a CSV file
 anon_df.to_csv("K_anon_data.csv", index=False)
